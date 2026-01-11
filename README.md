@@ -3,7 +3,7 @@
 ## Overview
 This project is an ongoing Final Year Project (FYP) for the BSc Computer Science programme at Birmingham City University (BCU). It focuses on designing and developing a cloud-based artificial intelligence system that uses facial recognition and emotion detection to monitor the emotional well-being of elderly individuals.
 
-The system combines computer vision, machine learning, and cloud-native architectures to identify individuals, classify emotional states, and analyse long-term behavioural trends while addressing ethical and privacy considerations.
+The system combines computer vision, machine learning and cloud-native architectures to identify individuals, classify emotional states, and analyse long-term behavioural trends while addressing ethical and privacy considerations.
 
 ## Project Objectives
 - Design a scalable AI system for facial recognition and emotion detection
