@@ -43,7 +43,70 @@ The system combines computer vision, machine learning and cloud-native architect
 ## Project Status
 This project is **currently in development**.  
 Core research, system design and literature review have been completed.  
-Implementation, testing and evaluation are ongoing.
+Implementation, testing and evaluation are ongoing.  
+**Project structure**  
+ abduladam@MacBookAir elderly-mood-monitoring-system % tree -L 4 -I "node_modules"                
+.
+├── cloud-functions
+│   ├── alert_dispatcher
+│   │   ├── email.js
+│   │   ├── fcm.js
+│   │   ├── index.js
+│   │   ├── package-lock.json
+│   │   ├── package.json
+│   │   └── sms.js
+│   ├── analytics_engine
+│   │   ├── index.js
+│   │   ├── models
+│   │   │   └── mood_trend.js
+│   │   ├── package-lock.json
+│   │   └── package.json
+│   └── image-ingest
+│       ├── index.js
+│       ├── package-lock.json
+│       ├── package.json
+│       ├── server.log
+│       ├── test.jpg
+│       └── vision.js
+├── dashboard
+│   ├── package.json
+│   └── src
+│       ├── api
+│       ├── charts
+│       ├── components
+│       │   ├── AlertCard.js
+│       │   ├── MoodChart.js
+│       │   └── UserProfile.js
+│       ├── firebase.js
+│       └── pages
+│           ├── Alerts.js
+│           ├── Analytics.js
+│           └── Dashboard.js
+├── docs
+│   ├── api-specifications.md
+│   ├── architecture-diagram.png
+│   ├── data-schema.md
+│   └── system-flow.md
+├── firebase.json
+├── firestore-debug.log
+├── firestore.indexes.json
+├── firestore.rules
+├── functions
+│   ├── index.js
+│   ├── package-lock.json
+│   └── package.json
+├── ml-models
+│   ├── emotion_model
+│   │   ├── evaluate.py
+│   │   ├── preprocess.py
+│   │   └── train.py
+│   └── facenet_model
+│       ├── embeddings.py
+│       ├── predict.py
+│       └── train_classifier.py
+└── storage.rules
+
+17 directories, 42 files
 
 ## Ethical Considerations
 - No raw facial images are permanently stored
