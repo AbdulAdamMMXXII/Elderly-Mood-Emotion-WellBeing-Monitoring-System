@@ -102,7 +102,7 @@ Implementation, testing and evaluation are ongoing.
 │   │   └── train.py  
 │   └── facenet_model  
 │       ├── embeddings.py  
-│       ├── predict.py
+│       ├── predict.py  
 │       └── train_classifier.py  
 └── storage.rules  
   
