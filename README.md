@@ -45,7 +45,7 @@ This project is **currently in development**.
 Core research, system design and literature review have been completed.  
 Implementation, testing and evaluation are ongoing.  
 **Project structure**  
- abduladam@MacBookAir elderly-mood-monitoring-system % tree -L 4 -I "node_modules"                
+ cmd: tree -L 4 -I "node_modules"                
 .
 ├── cloud-functions  
 │   ├── alert_dispatcher  
