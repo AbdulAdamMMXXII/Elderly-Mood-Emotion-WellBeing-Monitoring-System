@@ -1,4 +1,4 @@
-# Facial Recognition and Mood Detection for Elderly Well-Being
+# Elderly Mood/Emotion Well-Being Monitoring System
 
 ## Overview
 This project is an ongoing Final Year Project (FYP) for the BSc Computer Science programme at Birmingham City University (BCU). It focuses on designing and developing a cloud-based artificial intelligence system that uses facial recognition and emotion detection to monitor the emotional well-being of elderly individuals.
@@ -46,67 +46,81 @@ Core research, system design and literature review have been completed.
 Implementation, testing and evaluation are ongoing.  
 **Project structure**  
  cmd: tree -L 4 -I "node_modules"                
-.
-├── cloud-functions  
-│   ├── alert_dispatcher  
-│   │   ├── email.js  
-│   │   ├── fcm.js  
-│   │   ├── index.js  
-│   │   ├── package-lock.json  
-│   │   ├── package.json  
-│   │   └── sms.js  
-│   ├── analytics_engine  
-│   │   ├── index.js  
-│   │   ├── models  
-│   │   │   └── mood_trend.js  
-│   │   ├── package-lock.json  
-│   │   └── package.json  
-│   └── image-ingest  
-│       ├── index.js  
-│       ├── package-lock.json  
-│       ├── package.json  
-│       ├── server.log  
-│       ├── test.jpg  
-│       └── vision.js  
-├── dashboard  
-│   ├── package.json  
-│   └── src  
-│       ├── api  
-│       ├── charts  
-│       ├── components  
-│       │   ├── AlertCard.js  
-│       │   ├── MoodChart.js  
-│       │   └── UserProfile.js  
-│       ├── firebase.js  
-│       └── pages  
-│           ├── Alerts.js  
-│           ├── Analytics.js  
-│           └── Dashboard.js  
-├── docs  
-│   ├── api-specifications.md  
-│   ├── architecture-diagram.png  
-│   ├── data-schema.md  
-│   └── system-flow.md  
+.  
+├── ATTRIBUTIONS.md  
+├── FACE_API_SETUP.md  
+├── FUNCTIONAL_SUMMARY.md  
+├── README.md  
+├── SETUP_COMPLETE.md  
+├── VSCODE_GUIDE.md  
+├── apphosting.emulator.yaml  
+├── dist  
+│   ├── assets  
+│   │   ├── index-Cdl-89jI.js  
+│   │   └── index-DKFy34bx.css  
+│   ├── index.html  
+│   └── models  
+│       ├── face_expression_model-weights_manifest.json  
+│       ├── face_expression_model.bin  
+│       ├── tiny_face_detector_model-weights_manifest.json  
+│       └── tiny_face_detector_model.bin  
+├── download-models.js  
+├── download-models.sh  
 ├── firebase.json  
 ├── firestore-debug.log  
 ├── firestore.indexes.json  
 ├── firestore.rules  
-├── functions  
-│   ├── index.js  
-│   ├── package-lock.json  
-│   └── package.json  
-├── ml-models  
-│   ├── emotion_model  
-│   │   ├── evaluate.py  
-│   │   ├── preprocess.py  
-│   │   └── train.py  
-│   └── facenet_model  
-│       ├── embeddings.py  
-│       ├── predict.py  
-│       └── train_classifier.py  
-└── storage.rules  
+├── guidelines  
+│   └── Guidelines.md  
+├── index.html  
+├── package-lock.json  
+├── package.json  
+├── postcss.config.mjs  
+├── public  
+│   ├── index.html  
+│   └── models  
+│       ├── face_expression_model-weights_manifest.json  
+│       ├── face_expression_model.bin  
+│       ├── tiny_face_detector_model-weights_manifest.json  
+│       └── tiny_face_detector_model.bin  
+├── src  
+│   ├── app  
+│   │   ├── App.tsx  
+│   │   ├── components  
+│   │   │   ├── Layout.tsx  
+│   │   │   ├── ProtectedRoute.tsx  
+│   │   │   ├── figma  
+│   │   │   └── ui  
+│   │   ├── contexts  
+│   │   │   └── AuthContext.tsx  
+│   │   ├── pages  
+│   │   │   ├── Alerts.tsx  
+│   │   │   ├── Analytics.tsx  
+│   │   │   ├── Dashboard.tsx  
+│   │   │   ├── Login.tsx  
+│   │   │   ├── MoodDetection.tsx  
+│   │   │   ├── Profile.tsx  
+│   │   │   ├── Reports.tsx  
+│   │   │   └── SignUp.tsx  
+│   │   ├── routes.tsx  
+│   │   ├── services  
+│   │   │   ├── firestore.ts  
+│   │   │   └── moodAnalyzer.ts  
+│   │   ├── types  
+│   │   │   └── faceapi.d.ts  
+│   │   ├── types.ts  
+│   │   └── utils  
+│   │       └── moodUtils.ts  
+│   ├── firebase.ts  
+│   ├── main.tsx  
+│   └── styles  
+│       ├── fonts.css  
+│       ├── index.css  
+│       ├── tailwind.css  
+│       └── theme.css  
+└── vite.config.ts  
   
-17 directories, 42 files
+18 directories, 55 files  
 
 ## Ethical Considerations
 - No raw facial images are permanently stored
